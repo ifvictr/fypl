@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fypl</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/trianglify.min.js"></script>
+        <script src="assets/js/base.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Why?</h1>
+            <p>
+                Various programming languages are used for many different types of development. Each one has its own benefits
+                and drawbacks. Which language you choose solely depends on what you want to do. Below are some overviews and
+                a list of pros and cons on some of the most popular languages in the world.
+            </p>
+        </div>
+        <div id="languages"></div>
+        <div id="footer">
+            <ul>
+                <li>&copy; 2016 <a href="https://ifvictr.github.io" target="_blank" class="text-link">ifvictr</a></li>
+                <li><a href="index.html" class="text-link">Which?</a></li>
+                <li><i class="fa fa-eye"></i> the </i><i class="fa fa-code"></i> on <a href="https://github.com/ifvictr/fypl" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+            </ul>
+        </div>
+    </body>
+    <script>
+        var pattern = Trianglify({
+            height: $(window).height(),
+            width: $(window).width()
+        });
+        $("body").css("background-image", "url("+pattern.png()+")");
+        $.ajax({
+            type: "GET",
+            url: "assets/xml/languages.xml",
+            dataType: "xml",
+            success: function(xml){
+                $(xml).find("language").each(function(){
+                    var $language = $("<div>", {
+                        id: $(this).attr("name"),
+                        class: "language"
+                    });
+                    $language.append("<img src='images/logo/"+$(this).attr("name")+".png'>");
+                    var $content = $("<div>", {class: "content"});
+                    $content.append(
+                        "<section class='overview'>"+
+                            "<h2>"+$(this).find("human").text()+"</h2>"+
+                            "<p>"+$(this).find("overview").text()+"</p>"+
+                        "</section>"
+                    );
+                    var $comparison = $("<section>", {class: "comparison"});
+                    $comparison.append("<h3>Pros</h3>");
+                    var $prosList = $comparison.append("<ul class='pros'>").find(".pros");
+                    $(this).find("pros").find("item").each(function(){
+                        $prosList.append("<li>"+$(this).text()+"</li>");
+                    });
+                    $comparison.append("<h3>Cons</h3>");
+                    var $consList = $comparison.append("<ul class='cons'>").find(".cons");
+                    $(this).find("cons").find("item").each(function(){
+                        $consList.append("<li>"+$(this).text()+"</li>");
+                    });
+                    $content.append($comparison);
+                    $language.append($content);
+                    $("#languages").append($language);
+                });
+            }
+        });
+    </script>
+</html>

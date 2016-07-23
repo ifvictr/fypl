@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Languages will be listed alphabetically by their human name rather than their name attribute.
+Attributes are assigned by their file extension.
+-->
+<languages>
+    <language name="c">
+        <human>C</human>
+        <overview></overview>
+        <pros></pros>
+        <cons></cons>
+    </language>
+    <language name="cpp">
+        <human>C++</human>
+        <overview></overview>
+        <pros></pros>
+        <cons></cons>
+    </language>
+    <language name="cs">
+        <human>C#</human>
+        <overview></overview>
+        <pros></pros>
+        <cons></cons>
+    </language>
+    <language name="html">
+        <human>HTML</human>
+        <overview>
+            First of all, it isn't actually a programming language. It's a markup language. Hypertext Markup Language (commonly
+            abbreviated as HTML) is the standard markup language used to create webpages. Web browsers render HTML files into
+            visible and viewable webpages. CSS was released four years after the HTML. If you're going to learn HTML, CSS is
+            a highly recommended extra, your webpages will look a lot less plain.
+        </overview>
+        <pros>
+            <item>Consistency throughout, HTML can be found almost everywhere on the Web</item>
+            <item>Many built-in tags</item>
+            <item>Neater code, naming convention gives developers easier understanding of what does what</item>
+        </pros>
+        <cons>
+            <item>Only modern browsers support HTML5, this knocks HTML5 out for older ones</item>
+            <item>Time-consuming, due to inefficiency of maintaining a pure static HTML website</item>
+        </cons>
+    </language>
+    <language name="java">
+        <human>Java</human>
+        <overview>
+            Java is everywhere, literally. It's a general purpose language, meaning that you can use it for any kind of
+            development. It's actually one of the most used programming languages in the world. Java is derived from C and C++,
+            initially developed in 1995 at Sun Microsystems. You can find Java almost anywhere nowadays.
+        </overview>
+        <pros>
+            <item>Built-in garbage collection, automatically throws away objects not being used anymore</item>
+            <item>Has a very large built-in standard library</item>
+            <item>Syntax is similar to that of C++, except it's more simplified</item>
+        </pros>
+        <cons>
+            <item>Development takes more time compared to other languages (e.g. PHP, Python, Ruby)</item>
+            <item>Strict with everything (may be a good thing to certain people)</item>
+        </cons>
+    </language>
+    <language name="javascript">
+        <human>JavaScript</human>
+        <overview>
+            JavaScript is one of the core technologies in producing content for the World Wide Web. It first appeared in 1995,
+            and is still widely used today. The language is imperative and structured, dynamically-typed, and object-oriented.
+        </overview>
+        <pros>
+            <item>Executed on the client side, which means you don't have to worry about your server being overworked</item>
+            <item>Easy to pickup, syntax is similar to the English language</item>
+            <item>Webpages can be easily extended</item>
+        </pros>
+        <cons>
+            <item>Can be easily exploited by malicious users</item>
+            <item>Rendered differently throughout different browsers</item>
+        </cons>
+    </language>
+    <language name="lua">
+        <human>Lua</human>
+        <overview></overview>
+        <pros></pros>
+        <cons></cons>
+    </language>
+    <language name="php">
+        <human>PHP</human>
+        <overview>
+            PHP is a server-side scripting language made for web development, but can also be used for many other purposes. It
+            was made in 1994, initially PHP was an acronym that stood for Personal Home Pages. It now stands for PHP: Hypertext
+            Preprocessor. Can be embedded into HTML.
+        </overview>
+        <pros>
+            <item>Easy-to-use scripting language (for servers and task automation)</item>
+            <item>Relatively easy to learn, also popular and common</item>
+            <item>Similar to the C language, will be easier for programmers that know C</item>
+        </pros>
+        <cons>
+            <item>Function names are inconsistent</item>
+            <item>Unpredictable typing system</item>
+        </cons>
+    </language>
+    <language name="python">
+        <human>Python</human>
+        <overview>
+            Python is a high-level, interpreted, and dynamic scripting language. It focuses on code readability, requiring
+            less lines of code to complete tasks when compared to languages like C++ and Java. Python is also widely used,
+            from the simplest scripts to industrial applications.
+        </overview>
+        <pros>
+            <item>Easily read and written</item>
+            <item>Great language to learn as your first programming language</item>
+            <item>No need to compile code to run it</item>
+            <item>Standard library has mostly everything you'll need</item>
+        </pros>
+        <cons>
+            <item>Currently limited to desktop applications, not used in mobile development</item>
+            <item>Security is an issue, if you don't want the source code to be viewed when distributed</item>
+            <item>Slower when compared to compiled languages like C++ and Java</item>
+        </cons>
+    </language>
+    <language name="ruby">
+        <human>Ruby</human>
+        <overview></overview>
+        <pros></pros>
+        <cons></cons>
+    </language>
+    <language name="scratch">
+        <human>Scratch</human>
+        <overview>
+            Scratch is ideal for individuals with very little or no programming experience. It helps you develop the mindset
+            of a programmer, and teaches you the basics of programming. Great for beginners of all ages.
+        </overview>
+        <pros>
+            <item>Ability to make things you would be able to make with real code</item>
+            <item>Beginner-friendly environment</item>
+            <item>Simple user interface allows you to start coding instantly</item>
+        </pros>
+        <cons>
+            <item>Limited, only meant as a language to help you grasp programming concepts</item>
+        </cons>
+    </language>
+    <language name="swift">
+        <human>Swift</human>
+        <overview>
+            Swift is a programming language designed by Apple, for iOS, macOS, watchOS, tvOS, and Linux. It's a general purpose
+            language, also a more modern alternative to Objective-C. Swift also draws ideas from many different programming
+            languages.
+        </overview>
+        <pros>
+            <item>Easier and faster for programmers to learn</item>
+            <item>Easy to read and write, shorter code length overall</item>
+            <item>Friendly for beginners, compared to Objective-C</item>
+        </pros>
+        <cons>
+            <item>Compatible with only some platforms</item>
+            <item>Fast-paced development on the language, many updates bring about large changes</item>
+        </cons>
+    </language>
+</languages>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<quiz>
+    <question num="1" question="Do you know what computer programming is?">
+        <choices>
+            <choice action="c,cpp,cs,html,java,javascript,lua,php,python,ruby,swift"><![CDATA[<i class="fa fa-thumbs-up fa-fw fa-2x"></i>]]>Yes, I've heard of it.</choice>
+            <choice action="scratch"><![CDATA[<i class="fa fa-question fa-fw fa-2x"></i>]]>No, that's why I would like to know by learning one.</choice>
+        </choices>
+    </question>
+    <question num="2" question="Why would you like to learn programming?">
+        <choices>
+            <choice action="c,cpp,cs,java,python"><![CDATA[<i class="fa fa-briefcase fa-fw fa-2x"></i>]]>So I can become a professional at it</choice>
+            <choice action="html,javascript,ruby"><![CDATA[<i class="fa fa-diamond fa-fw fa-2x"></i>]]>So I have bragging rights</choice>
+            <choice action="javascript,python,scratch"><![CDATA[<i class="fa fa-cubes fa-fw fa-2x"></i>]]>So I know gain another skill</choice>
+            <choice action="html,javascript,php,python,ruby"><![CDATA[<i class="fa fa-building fa-fw fa-2x"></i>]]>So I can run a tech startup/business</choice>
+            <choice action="c,cpp,java,python"><![CDATA[<i class="fa fa-user-secret fa-fw fa-2x"></i>]]>So I can hack into stuff</choice>
+        </choices>
+    </question>
+    <question num="3" question="What sort of development are you planning to go into?">
+        <choices>
+            <choice action="cpp,cs,html,java,lua"><![CDATA[<i class="fa fa-gamepad fa-fw fa-2x"></i>]]>Game development</choice>
+            <choice action="html,javascript,php,ruby"><![CDATA[<i class="fa fa-globe fa-fw fa-2x"></i>]]>Web development</choice>
+            <choice action="c,cpp,cs"><![CDATA[<i class="fa fa-cogs fa-fw fa-2x"></i>]]>Mechanical development</choice>
+            <choice action="cs,html,java,swift"><![CDATA[<i class="fa fa-mobile fa-fw fa-2x"></i>]]>Mobile development</choice>
+            <choice action="cs,java,swift"><![CDATA[<i class="fa fa-desktop fa-fw fa-2x"></i>]]>Desktop development</choice>
+        </choices>
+    </question>
+    <question num="4" question="How much would you like your annual salary to be?">
+        <choices>
+            <choice action="java,javascript,python"><![CDATA[<i class="fa fa-university fa-fw fa-2x"></i>]]>$100,000 or above, I want to buy a house.</choice>
+            <choice action="cpp,cs,swift"><![CDATA[<i class="fa fa-glass fa-fw fa-2x"></i>]]>$80,000 or above, I really need the money.</choice>
+            <choice action="c,html,php,ruby"><![CDATA[<i class="fa fa-usd fa-fw fa-2x"></i>]]>$40,000 or above, I need the money.</choice>
+        </choices>
+    </question>
+    <question num="5" question="How much time are you willing to put into learning a programming language?">
+        <choices>
+            <choice action="html,javascript,lua,python,scratch"><![CDATA[<i class="fa fa-child fa-fw fa-2x"></i>]]>A few weeks</choice>
+            <choice action="java,php,ruby,swift"><![CDATA[<i class="fa fa-graduation-cap fa-fw fa-2x"></i>]]>A couple months</choice>
+            <choice action="c,cpp,cs"><![CDATA[<i class="fa fa-male fa-fw fa-2x"></i>]]>Many years</choice>
+        </choices>
+    </question>
+    <question num="6" question="What do you put first when it comes to performance?">
+        <choices>
+            <choice action="java"><![CDATA[<i class="fa fa-suitcase fa-fw fa-2x"></i>]]>Portability</choice>
+            <choice action="python"><![CDATA[<i class="fa fa-paint-brush fa-fw fa-2x"></i>]]>Quality</choice>
+            <choice action="c,cpp"><![CDATA[<i class="fa fa-bolt fa-fw fa-2x"></i>]]>Speed</choice>
+        </choices>
+    </question>
+    <question num="7" question="What OS (operating system) would you like to work with?">
+        <choices>
+            <choice action="cs"><![CDATA[<i class="fa fa-windows fa-fw fa-2x"></i>]]>Windows</choice>
+            <choice action="swift"><![CDATA[<i class="fa fa-apple fa-fw fa-2x"></i>]]>Mac</choice>
+            <choice action="swift"><![CDATA[<i class="fa fa-mobile fa-fw fa-2x"></i>]]>iOS</choice>
+            <choice action="java"><![CDATA[<i class="fa fa-android fa-fw fa-2x"></i>]]>Android</choice>
+        </choices>
+    </question>
+    <question num="8" question="I would rather learn a language that is: ">
+        <choices>
+            <choice action="javascript,lua,php,python,ruby,scratch,swift"><![CDATA[<i class="fa fa-bomb fa-fw fa-2x"></i>]]>Easy to learn and is useful</choice>
+            <choice action="c,cpp,cs,java"><![CDATA[<i class="fa fa-cutlery fa-fw fa-2x"></i>]]>Hard to learn and is useful</choice>
+        </choices>
+    </question>
+    <question num="9" question="What kind of reputation/job do you see yourself having if you learn to program?">
+        <choices>
+            <choice action="c,cpp,java,python"><![CDATA[<i class="fa fa-unlock fa-fw fa-2x"></i>]]>Hacker</choice>
+            <choice action="html,java,javascript,lua,php,python,ruby,swift"><![CDATA[<i class="fa fa-coffee fa-fw fa-2x"></i>]]>Freelance developer</choice>
+            <choice action="c,cpp,cs,java,python,swift"><![CDATA[<i class="fa fa-certificate fa-fw fa-2x"></i>]]>Software engineer</choice>
+            <choice action="c,cpp,cs,java,javascript,lua,php,python,ruby,swift"><![CDATA[<i class="fa fa-briefcase fa-fw fa-2x"></i>]]>Computer scientist</choice>
+        </choices>
+    </question>
+    <question num="10" question="Do you see yourself working for any big companies?">
+        <choices>
+            <choice action="c,cpp,html,java,javascript,php"><![CDATA[<i class="fa fa-building fa-fw fa-2x"></i>]]>Yes</choice>
+            <choice action="html,javascript,php,scratch"><![CDATA[<i class="fa fa-laptop fa-fw fa-2x"></i>]]>No</choice>
+        </choices>
+    </question>
+    <question num="11" question="Almost done. Which of the following code do you like the most?">
+        <choices>
+            <choice action="c"><![CDATA[<img src="images/sample/c.png">]]></choice>
+            <choice action="cpp"><![CDATA[<img src="images/sample/cpp.png">]]></choice>
+            <choice action="cs"><![CDATA[<img src="images/sample/cs.png">]]></choice>
+            <choice action="java"><![CDATA[<img src="images/sample/java.png">]]></choice>
+            <choice action="javascript"><![CDATA[<img src="images/sample/javascript.png">]]></choice>
+            <choice action="lua"><![CDATA[<img src="images/sample/lua.png">]]></choice>
+            <choice action="php"><![CDATA[<img src="images/sample/php.png">]]></choice>
+            <choice action="python"><![CDATA[<img src="images/sample/python.png">]]></choice>
+            <choice action="ruby"><![CDATA[<img src="images/sample/ruby.png">]]></choice>
+            <choice action="swift"><![CDATA[<img src="images/sample/swift.png">]]></choice>
+        </choices>
+    </question>
+    <question num="12" question="Are you willing to stay up late at night?">
+        <choices>
+            <choice action="c,cpp,cs,java"><![CDATA[<i class="fa fa-thumbs-o-up fa-fw fa-2x"></i>]]>Yes</choice>
+            <choice action="html,javascript,lua,python,scratch"><![CDATA[<i class="fa fa-thumbs-o-down fa-fw fa-2x"></i>]]>Hell no, I need my precious sleep</choice>
+        </choices>
+    </question>
+    <question num="13" question="How patient are you?">
+        <choices>
+            <choice action="c,cpp,cs,java"><![CDATA[<i class="fa fa-battery-full fa-fw fa-2x"></i>]]>I am very patient</choice>
+            <choice action="lua,php,python"><![CDATA[<i class="fa fa-battery-half fa-fw fa-2x"></i>]]>I am VERY PATIENT (hurry up...)</choice>
+            <choice action="html,javascript,scratch"><![CDATA[<i class="fa fa-battery-empty fa-fw fa-2x"></i>]]>NO NOT AT ALL TELL ME WHICH ONE IS RIGHT FOR ME ALREADY!!!</choice>
+        </choices>
+    </question>
+    <question num="14" question="Can you handle loads of critical thinking?">
+        <choices>
+            <choice action="c,cpp,cs"><![CDATA[<i class="fa fa-thumbs-o-up fa-fw fa-2x"></i>]]>Yes</choice>
+            <choice action="java,javascript,php,python,scratch"><![CDATA[<i class="fa fa-thumbs-o-down fa-fw fa-2x"></i>]]>Not exactly</choice>
+        </choices>
+    </question>
+    <question num="15" question="Last question! Can you handle sitting for long periods of time?">
+        <choices>
+            <choice action="c,cpp,cs,java,swift"><![CDATA[<i class="fa fa-thumbs-o-up fa-fw fa-2x"></i>]]>Yes, if it helps</choice>
+            <choice action="html,javascript,python,scratch"><![CDATA[<i class="fa fa-thumbs-o-down fa-fw fa-2x"></i>]]>No, that's not good for you...</choice>
+        </choices>
+    </question>
+</quiz>

@@ -1,0 +1,117 @@
+@import url(animate.min.css);
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+::selection{
+    background: #aeeeee;
+}
+body{
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1, h3, p, a, section, li, .choice{
+    font-family: "Source Code Pro", monospace;
+}
+a{
+    color: #ff1493;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+a.text-link{
+    border-bottom: 1px dotted;
+}
+a.text-link:hover{
+    border-bottom-color: transparent;
+}
+#header, #result{
+    background: linear-gradient(180deg, #45484d 0%, #000000 100%);
+    border-radius: 8px;
+    color: #ffffff;
+    margin: auto;
+    padding: 8px;
+    text-align: center;
+    width: 75%;
+}
+#questions > .question, #languages > .language{
+    margin: auto;
+    overflow: auto;
+    width: 75%;
+}
+#questions > .question > h3{
+    text-align: center;
+}
+.choices{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.choices > .choice, #languages > .language{
+    background: #ffffff;
+    border-radius: 8px;
+    opacity: 0.7;
+    overflow: auto;
+    padding: 16px;
+}
+.choices > .choice{
+    margin-top: 4px;
+    transition: 0.2s ease-in-out;
+}
+.choices > .choice:hover, #languages > .language:hover{
+    opacity: 1;
+}
+.choices > .choice > i{
+    padding-right: 12px;
+}
+#questions, #languages{
+    margin-bottom: 48px;
+}
+#languages > .language{
+    display: flex;
+    margin-top: 8px;
+    transition: 0.3s ease-in-out;
+}
+.language > img{
+    float: left;
+    height: 25%;
+    margin-right: 24px;
+    padding: 12px;
+    transition: ease-in-out 0.4s;
+    width: 25%;
+}
+.language > .content > .comparison > ul{
+    list-style-type: none;
+    padding: 0;
+}
+.language > .content > .comparison > ul > li:before{
+    content: "-";
+    padding-right: 8px;
+}
+#result{
+    display: none;
+}
+#footer{
+    background: #ffffff;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    padding: 8px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+#footer > ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+#footer > ul > li{
+    display: inline;
+}
+#footer > ul > li + li:before{
+    content: "\00b7";
+    padding-right: 4px;
+}
+@media screen and (max-width: 768px){
+    body{
+        font-size: 75%;
+    }
+}

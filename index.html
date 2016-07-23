@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fypl</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/trianglify.min.js"></script>
+        <script src="assets/js/base.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Find Your Programming Language</h1>
+            <p>
+                You want to find out how to start programming, but don't know where to start? There are many languages to
+                choose from, but only a few are relevant to what you want to achieve. Different languages are targeted at
+                different kinds of development, some for the web and some for a robot. Which one is right for you? Find out
+                by taking the quiz!
+            </p>
+        </div>
+        <div id="questions"></div>
+        <div id="result">
+            <img src="images/logo/scratch.png" id="result-image">
+            <h1>You should learn... <span id="result-human">Scratch</span>! <a href="#" id="result-why">Why?</a></h1>
+        </div>
+        <div id="footer">
+            <ul>
+                <li>&copy; 2016 <a href="https://ifvictr.github.io" target="_blank" class="text-link">ifvictr</a></li>
+                <li><a href="why.html" class="text-link">Why?</a></li>
+                <li><i class="fa fa-eye"></i> the <i class="fa fa-code"></i> on <a href="https://github.com/ifvictr/fypl" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+            </ul>
+        </div>
+    </body>
+    <script>
+        var pattern = Trianglify({
+            height: $(window).height(),
+            width: $(window).width()
+        });
+        $("body").css("background-image", "url("+pattern.png()+")");
+        $.ajax({
+            type: "GET",
+            url: "assets/xml/quiz.xml",
+            dataType: "xml",
+            success: function(xml){
+                $(xml).find("question").each(function(){
+                    var $question = $("<div>", {
+                        id: "q"+$(this).attr("num"),
+                        class: "question"
+                    });
+                    $question.append("<h3>"+$(this).attr("num")+". "+$(this).attr("question")+"</h3>");
+                    var $choices = $question.append("<ul class='choices'>").find(".choices");
+                    $(this).find("choice").each(function(){
+                        $choices.append("<li class='choice' action='"+$(this).attr("action")+"'>"+$(this).text()+"</li>");
+                    });
+                    if($(this).attr("num") != 1){
+                        $question.css("display", "none");
+                    }
+                    $("#questions").append($question);
+                });
+            }
+        });
+    </script>
+</html>
