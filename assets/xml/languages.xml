@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--
-Languages will be listed alphabetically by their human name rather than their name attribute.
-Attributes are assigned by their file extension.
--->
 <languages>
     <language name="c">
         <human>C</human>
@@ -62,6 +58,7 @@ Attributes are assigned by their file extension.
         <overview>
             JavaScript is one of the core technologies in producing content for the World Wide Web. It first appeared in 1995,
             and is still widely used today. The language is imperative and structured, dynamically-typed, and object-oriented.
+            It can also be used to create server-side applications, if you know what Node.js is.
         </overview>
         <pros>
             <item>Executed on the client side, which means you don't have to worry about your server being overworked</item>

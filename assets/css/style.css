@@ -8,7 +8,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-h1, h3, p, a, section, li, .choice{
+h1, h2, h3, p, a, section, li, .choice{
     font-family: "Source Code Pro", monospace;
 }
 a{
@@ -98,12 +98,12 @@ a.text-link:hover{
     text-align: center;
     width: 100%;
 }
-#footer > ul{
+#footer > ul, #result > ul{
     list-style-type: none;
     margin: 0;
     padding-left: 0;
 }
-#footer > ul > li{
+#footer > ul > li, #result > ul > li{
     display: inline;
 }
 #footer > ul > li + li:before{
