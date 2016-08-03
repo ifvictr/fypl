@@ -13,7 +13,7 @@ var data = {
     swift: {value: 0, human: "Swift"}
 };
 //Page stuff
-$(document).ready(function(){
+$(function(){
     $(".choice").click(function(){
         var $twoUp = $(this).parent().parent();
         var $actions = $(this).attr("action").trim().toLowerCase().split(",");
@@ -27,18 +27,31 @@ $(document).ready(function(){
             data[$actions[$key]]["value"] += 1;
         }
         if($twoUp.attr("id") === "q1"){
-            $("#header").delay(300).addClass("animated slideOutUp").fadeOut();
+            $("#header")
+                .delay(300)
+                .addClass("animated slideOutUp")
+                .fadeOut();
         }
         $(this).css("background", "#8ee5ee");
-        $twoUp.delay(500).addClass("animated fadeOutUp").fadeOut();
-        $twoUp.next().delay(1600).addClass("animated fadeInUp").fadeIn();
+        $twoUp
+            .delay(500)
+            .addClass("animated fadeOutUp")
+            .fadeOut();
+        $twoUp
+            .next()
+            .delay(1600)
+            .addClass("animated fadeInUp")
+            .fadeIn();
         if($twoUp.is(":last-child")){
             var best = findMax(data);
             $("#result-image").attr("src", "images/logo/"+best+".png");
             $("#result-human").html(data[best]["human"]);
-            $("#result-why").attr("href", "why.html#"+best);
-            $("#action-twitter").attr("href", "https://twitter.com/intent/tweet?text="+escape(data[best]["human"]+" is my programming language. What's yours?")+"&url=https%3A%2F%2Fifvictr.github.io%2Ffypl&hashtags=code,"+best);
-            $("#result").delay(1500).addClass("animated slideInUp").fadeIn();
+            $("#result-why").attr("href", "which.html#"+best);
+            $("#action-twitter").attr("href", "https://twitter.com/intent/tweet?text="+encodeURIComponent(data[best]["human"]+" is my programming language. What's yours?")+"&url=https%3A%2F%2Fifvictr.github.io%2Ffypl&hashtags=code,"+best);
+            $("#result")
+                .delay(1500)
+                .addClass("animated slideInUp")
+                .fadeIn();
         }
         /*
         console.log("On question #"+$twoUp.attr("id").substring(1));

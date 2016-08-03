@@ -31,17 +31,13 @@
         <div id="footer">
             <ul>
                 <li>&copy; 2016 <a href="https://ifvictr.github.io" target="_blank" class="text-link">ifvictr</a></li>
-                <li><a href="why.html" class="text-link">Why?</a></li>
+                <li><a href="which.html" class="text-link">Which?</a></li>
                 <li><i class="fa fa-eye"></i> the <i class="fa fa-code"></i> on <a href="https://github.com/ifvictr/fypl" target="_blank"><i class="fa fa-github-alt"></i></a></li>
             </ul>
         </div>
     </body>
     <script>
-        var pattern = Trianglify({
-            height: $(window).height(),
-            width: $(window).width()
-        });
-        $("body").css("background-image", "url("+pattern.png()+")");
+        $("body").css("background-image", "url("+Trianglify({height: $(window).height(), width: $(window).width()}).png()+")");
         $.ajax({
             type: "GET",
             url: "assets/xml/quiz.xml",

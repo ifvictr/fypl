@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="header">
-            <h1>Why this? Why that?</h1>
+            <h1>Which?</h1>
             <p>
                 Various programming languages are used for many different types of development. Each one has its own benefits
                 and drawbacks. Which language you choose solely depends on what you want to do. Below are some overviews and
@@ -28,11 +28,7 @@
         </div>
     </body>
     <script>
-        var pattern = Trianglify({
-            height: $(window).height(),
-            width: $(window).width()
-        });
-        $("body").css("background-image", "url("+pattern.png()+")");
+        $("body").css("background-image", "url("+Trianglify({height: $(window).height(), width: $(window).width()}).png()+")");
         $.ajax({
             type: "GET",
             url: "assets/xml/languages.xml",

@@ -2,30 +2,34 @@
 <languages>
     <language name="c">
         <human>C</human>
-        <overview>C is one of the oldest programming languages of the computer history. It's defined as a high-level programming
-        language but however you can embed Assembly code into your program. It's the best choice for writing system drivers. It can
-        be also used to write operating system kernels and many more...</overview>
+        <overview>
+            C is one of the oldest programming languages of the computer history. It's defined as a high-level programming
+            language but however you can embed Assembly code into your program. It's the best choice for writing system
+            drivers. It can be also used to write operating system kernels and many more...
+        </overview>
         <pros>
-            <item>Fast</item>
-            <item>Native (doesn't have any emulation or virtual machine like Java or Mono C# to be run)</item>
-            <item>Cross-Platform</item>
             <item>Can embed Assembly (and so you can interact directly with the CPU and the hardware)</item>
+            <item>Cross-platform</item>
+            <item>Fast</item>
             <item>It can also be used to write operating system kernels (Linux is an example) or system drivers</item>
+            <item>Native (doesn't have any emulation or virtual machine like Java or Mono C# to be run)</item>
         </pros>
         <cons>
+            <item>Cross-Platform progams may need some changes in order to be compiled correctly from different compilers</item>
             <item>It's a bit difficult</item>
             <item>To understand it and write well-made programs you need the Assembly knownledge</item>
-            <item>Cross-Platform progams may need some changes in order to be compiled correctly from different compilers</item>
         </cons>
     </language>
     <language name="cpp">
         <human>C++</human>
-        <overview>C++ is an improvement of the C programming language. Unlike C it's an object oriented programming language but 
-        it implements all C standard features anyway. It can be used to write also operating system kernels and system drivers just
-        like C but it has a different linkage.</overview>
+        <overview>
+            C++ is an improvement of the C programming language. Unlike C it's an object oriented programming language but
+            it implements all C standard features anyway. It can be used to write also operating system kernels and system
+            drivers just like C but it has a different linkage.
+        </overview>
         <pros>
-            <item>Object Oriented unlike C</item>
             <item>Easier than C</item>
+            <item>Object-oriented, unlike C</item>
         </pros>
         <cons>
             <item>Source linkage changes between different compilers</item>
@@ -33,17 +37,19 @@
     </language>
     <language name="cs">
         <human>C#</human>
-        <overview>C# is a object oriented programming language developed by Microsoft. It's syntax is very easy but much similar
-        to C. It has an extensive set of default libraries and classes which can be used in your own program. Currently it's possible
-        to run C# programs also on Linux and MacOS thanks to Mono which is also used by Unity Game Engine</overview>
+        <overview>
+            C# is a object oriented programming language developed by Microsoft. It's syntax is very easy but much similar
+            to C. It has an extensive set of default libraries and classes which can be used in your own program. Currently
+            it's possible to run C# programs also on Linux and MacOS thanks to Mono which is also used by Unity Game Engine.
+        </overview>
         <pros>
+            <item>Cross-platform thanks to Mono (only Mono compiled program are cross-platform)</item>
             <item>Easy to code</item>
             <item>Lots of integrated libraries</item>
-            <item>Cross-Platform thanks to Mono (only Mono compiled program are cross-platform)</item>
         </pros>
         <cons>
+            <item>Cross-platform is not native. To run C# Cross-Platform programs you need to install the Mono Runtime module</item>
             <item>Not very fast with Mono</item>
-            <item>Cross-Platform is not native. To run C# Cross-Platform programs you need to install the Mono Runtime module</item>
         </cons>
     </language>
     <language name="html">
