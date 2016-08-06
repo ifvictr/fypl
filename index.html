@@ -5,9 +5,6 @@
         <meta charset="UTF-8">
         <link rel="icon" href="images/favicon.png" type="image/png">
         <link rel="stylesheet" href="assets/css/style.css">
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/trianglify.min.js"></script>
-        <script src="assets/js/base.js"></script>
     </head>
     <body>
         <div id="header">
@@ -35,30 +32,33 @@
                 <li><i class="fa fa-eye"></i> the <i class="fa fa-code"></i> on <a href="https://github.com/ifvictr/fypl" target="_blank"><i class="fa fa-github-alt"></i></a></li>
             </ul>
         </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/trianglify.min.js"></script>
+        <script src="assets/js/base.js"></script>
+        <script>
+            $("body").css("background-image", "url("+Trianglify({height: $(window).height(), width: $(window).width()}).png()+")");
+            $.ajax({
+                type: "GET",
+                url: "assets/xml/quiz.xml",
+                dataType: "xml",
+                success: function(xml){
+                    $(xml).find("question").each(function(){
+                        var $question = $("<div>", {
+                            id: "q"+$(this).attr("num"),
+                            class: "question"
+                        });
+                        $question.append("<h3>"+$(this).attr("num")+". "+$(this).attr("question")+"</h3>");
+                        var $choices = $question.append("<ul class='choices'>").find(".choices");
+                        $(this).find("choice").each(function(){
+                            $choices.append("<li class='choice' data-action='"+$(this).attr("action")+"'>"+$(this).text()+"</li>");
+                        });
+                        if($(this).attr("num") != 1){
+                            $question.css("display", "none");
+                        }
+                        $("#questions").append($question);
+                    });
+                }
+            });
+        </script>
     </body>
-    <script>
-        $("body").css("background-image", "url("+Trianglify({height: $(window).height(), width: $(window).width()}).png()+")");
-        $.ajax({
-            type: "GET",
-            url: "assets/xml/quiz.xml",
-            dataType: "xml",
-            success: function(xml){
-                $(xml).find("question").each(function(){
-                    var $question = $("<div>", {
-                        id: "q"+$(this).attr("num"),
-                        class: "question"
-                    });
-                    $question.append("<h3>"+$(this).attr("num")+". "+$(this).attr("question")+"</h3>");
-                    var $choices = $question.append("<ul class='choices'>").find(".choices");
-                    $(this).find("choice").each(function(){
-                        $choices.append("<li class='choice' action='"+$(this).attr("action")+"'>"+$(this).text()+"</li>");
-                    });
-                    if($(this).attr("num") != 1){
-                        $question.css("display", "none");
-                    }
-                    $("#questions").append($question);
-                });
-            }
-        });
-    </script>
 </html>

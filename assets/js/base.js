@@ -16,7 +16,7 @@ var data = {
 $(function(){
     $(".choice").click(function(){
         var $twoUp = $(this).parent().parent();
-        var $actions = $(this).attr("action").trim().toLowerCase().split(",");
+        var $actions = $(this).attr("data-action").trim().toLowerCase().split(",");
         //Process user choice
         for(var $key in $actions){
             //Tiebreaker, in case several languages have the same value points, this one will add more points to only one
