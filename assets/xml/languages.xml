@@ -5,7 +5,7 @@
         <overview>
             C is one of the oldest programming languages of the computer history. It's defined as a high-level programming
             language but however you can embed Assembly code into your program. It's the best choice for writing system
-            drivers. It can be also used to write operating system kernels and many more...
+            drivers. It can be also used to write operating system kernels and many more.
         </overview>
         <pros>
             <item>Can embed Assembly (and so you can interact directly with the CPU and the hardware)</item>
@@ -15,9 +15,9 @@
             <item>Native (doesn't have any emulation or virtual machine like Java or Mono C# to be run)</item>
         </pros>
         <cons>
-            <item>Cross-Platform progams may need some changes in order to be compiled correctly from different compilers</item>
+            <item>Cross-platform programs may need some changes in order to be compiled correctly from different compilers</item>
             <item>It's a bit difficult</item>
-            <item>To understand it and write well-made programs you need the Assembly knownledge</item>
+            <item>Some Assembly knowledge needed to understand and write well-written programs</item>
         </cons>
     </language>
     <language name="cpp">

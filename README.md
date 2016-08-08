@@ -7,12 +7,12 @@ Determine the best programming language you should start learning as a beginner.
 - C++
 - C#
 - HTML
-- Lua
+- Lua (insight still needed, please help)
 - Java
 - JavaScript
 - PHP
 - Python
-- Ruby
+- Ruby (insight still needed, please help)
 - Scratch
 - Swift
 
